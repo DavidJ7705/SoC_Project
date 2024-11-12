@@ -12,7 +12,6 @@ Add a short welcome message or introduction here. Aim to get the viewer interest
 Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
 
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/VGAPrjSum1.png">
-<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/VideoChangeColour.MOV">
 
 
 ### **Template Code**
