@@ -5,7 +5,7 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences.
+Welcome to the blog for my FPGA VGA Driver Project! The goal of this project is to explore the area of System-on_Chip (SoC) design, and to adapt and design an FPGA VGA Driver to display my very own image on a 640 x 480 display..
 
 ## **Template VGA Design**
 ### **Project Set-Up**
@@ -32,6 +32,9 @@ Show how you simulated your own design. Are there any things to note? Demonstrat
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 ### **Demonstration**
+If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+
+### **Conclusion**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
 
 ## **More Markdown Basics**
