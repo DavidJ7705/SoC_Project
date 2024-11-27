@@ -5,7 +5,7 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-Welcome to the blog for my FPGA VGA Driver Project! The goal of this project is to explore the area of System-on_Chip (SoC) design, and to adapt and design an FPGA VGA Driver to display my very own image on a 640 x 480 display..
+Welcome to the blog for my FPGA VGA Driver Project! The goal of this project is to explore the area of System-on_Chip (SoC) design, and to adapt and design an FPGA VGA Driver to display my very own image on a 640 x 480 display.
 
 ## **Template VGA Design**
 ### **Project Set-Up**
@@ -32,7 +32,11 @@ Show how you simulated your own design. Are there any things to note? Demonstrat
 ### **Synthesis**
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 ### **Demonstration**
-If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
+The custom design was created successfully, and displayed on the Basys3 Board. It showcased my unique pattern which was a combination of colour cycles composed of stripes and columns, overlayed on a static image.
+
+(insert images of it) 
+explaining whats going on
+It is a solid colour background, which cycles through different colours separated by stripes and columns, in a clockwise motion around the display.
 
 ### **Conclusion**
 If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
