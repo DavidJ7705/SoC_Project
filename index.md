@@ -9,10 +9,11 @@ Welcome to the blog for my FPGA VGA Driver Project! The goal of this project is 
 
 ## **Template VGA Design**
 ### **Project Set-Up**
-Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
+The project set-up involves using the Vivado IDE for simulation, synthesis, and implementation. Below is a screenshot of the project environment, which highlights the settings and board which is part of the Artix-7 family.
 
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/VGAPrjSum1.png">
 
+Vivado is an ECAD tool that provides an easy to follow structure through the entire FPGA design process, from using clocks in coding to the bitstream generation.
 
 ### **Template Code**
 Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
