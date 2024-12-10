@@ -57,8 +57,14 @@ Implementation assigns logic elements to specific locations on the FPGA board. C
 After successfully running the code, the output looks as follows:
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/colourclock.GIF"> <br>
 As you can see, the project was a success as it cycled between each colour and reset as intended.
+
+
+
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
+My initial idea was a static image that would have random colours appear on the screen and flow in a satisfying way.
+
+
 ### **Code Adaptation**
 Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
 ### **Simulation**
