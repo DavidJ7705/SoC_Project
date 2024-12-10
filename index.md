@@ -111,7 +111,12 @@ assign blue = blue_reg;`. The assign statements map the internal registers (red_
 
 
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcode3.png"> <br>
-
+--- 
+The actual output of the image moves very fast so it is quite difficult to see what is going on with the pixels. By adding a counter to the code, we can adjust the speed of it and see what is going on. 
+* `counter <= 16'd0;`. This resets the counter. It is also 16 bits. This is useful as it is a large range which is necessary for counting clocks and cycles.
+* `counter <= 16'd100;`. This means that after every 100 clocks, it resets the image. This lets us see whats happening with each colour block. 
+<br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/slowcode1.png"> <br>
+After slowing down the image it is interesting to see that there is in or around 13 blocks in each diagonal line. This fits with the formula of dividing 640 by 50 as it comes out as 12.8. 
 
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
