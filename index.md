@@ -35,6 +35,10 @@ Show how you simulated your own design. Are there any things to note? Demonstrat
 Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
 ### **Demonstration**
 The custom design was created successfully, and displayed on the Basys3 Board. It showcased my unique pattern which was a combination of colour cycles composed of stripes and columns, overlayed on a static image.
+
+<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Fastgif.gif">
+
+ 
  
 (insert images of it) 
 explaining whats going on
