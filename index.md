@@ -15,10 +15,16 @@ The project started by setting up a Vivado project and configuring the Basys3 de
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/VGAPrjSum1.png">
 
 ### **Template Code**
-The template Verilog design code for a Colour Cycle was used first to get an understanding of the VGA designs. The the clock timing was obtained from the IP catalog under the clocking section. The example code included VGATop.v, VGASync.v and lastly VGAColourCycle.v, which are all design sources. Testbench.v was provided which was used for the simulation sources. The Basys3_Master.xdc was also provided as it is needed to run code on the Basys3 development board. After adding all the files in the correct places, the project flow should look as follows:
+The template Verilog design code for a Colour Cycle was used first to get an understanding of the VGA designs. The the clock timing was obtained from the IP catalog under the clocking section.<br> 
+<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Clocking.png"><br>
+The example code included VGATop.v, VGASync.v and lastly VGAColourCycle.v, which are all design sources. Testbench.v was provided which was used for the simulation sources. The Basys3_Master.xdc was also provided as it is needed to run code on the Basys3 development board. After adding all the files in the correct places, the project flow should look as follows:
 
 
-The code was a simple program which used a state machine to cycle through 8 different solid colours, one after another, on the VGA display. The colours were black, red, yellow, green, cyan, blue, magenta, and white. These all had their own states that get the colour to show up using different 12 bits for colour assignment (colour <=12'b000000001111;).<br>
+<br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/templateflow.png"><br>
+
+
+The code was a simple program which used a state machine to cycle through 8 different solid colours, one after another, on the VGA display. The colours were black, red, yellow, green, cyan, blue, magenta, and white. These all had their own states that get the colour to show up using different 12 bits for colour assignment (colour <=12'b000000001111;).
+<br>
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Colourcyclecode.jpg"> <br>
 
 
