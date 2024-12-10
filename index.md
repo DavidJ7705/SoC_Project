@@ -116,9 +116,10 @@ The actual output of the image moves very fast so it is quite difficult to see w
 * `counter <= 16'd0;`. This resets the counter. It is also 16 bits. This is useful as it is a large range which is necessary for counting clocks and cycles.
 * `counter <= 16'd100;`. This means that after every 100 clocks, it resets the image. This lets us see whats happening with each colour block. 
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/slowcode1.png"> <br>
-After slowing down the image it is interesting to see that there is in or around 13 blocks in each diagonal line. This fits with the formula of dividing 640 by 50 as it comes out as 12.8. 
-<br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Slowgif.gif"> <br>
+After slowing down the image it is interesting to see that there is in or around 13 blocks in each diagonal line. This fits with the formula of dividing 640 by 50 as it comes out as 12.8.
 
+<br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Slowgif.gif"> <br>
+<br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/slowss.png"> <br>
 
 
 ### **Simulation**
