@@ -84,7 +84,21 @@ end`. This starts the image at the furthest left position. When the reset signal
 * `if (block_position >= 11'd640)
     block_position <= 11'd0;`. If the blocks position reaches or exceeds the decimal value of 640, it wraps around to the start at the left.
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcode1.png"> <br>
+---
+
+
+* `if (col >= block_position && col < block_position + 11'd50) begin`. This checks for if the column is within the horizontal range of screen, and if it is, it spans 50 pixels. If the column is also in this range, the code determines the colour of it based on its position.
+* `case ((block_position / 50) % 3)`. This determines each block colour by dividing it by 50 and then using the modulo operator to alternate between 0, 1 and 2. These values link to the different registers, for red, green, and blue.
+* `Case 0`. The block is fully red when `(block_position / 50) % 3 == 0`.
+* `Case 1`. The block is fully blue when `(block_position / 50) % 3 == 1`.
+*  `Case 2`. The block is fully green when `(block_position / 50) % 3 == 2`.
+* `Default case`. If an unexpected error happens, the block will change to white. All colour registers are set to high as this will output a white.
+
+
+
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcode2.png"> <br>
+
+---
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcode3.png"> <br>
 
 
