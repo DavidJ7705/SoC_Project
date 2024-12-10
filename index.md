@@ -28,8 +28,7 @@ The example code included VGATop.v, VGASync.v and lastly VGAColourCycle.v, which
 The code was a simple program which used a state machine to cycle through 8 different solid colours, one after another, on the VGA display. The colours were black, red, yellow, green, cyan, blue, magenta, and white. These all had their own states that get the colour to show up using different 12 bits for colour assignment (colour <=12'b000000001111;).
 <br><br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Colourcyclecode.jpg"> <br>
 
-After successfully running the code, the output looks as follows:
-<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/colourclock.GIF"> <br>
+
 
 
 
@@ -55,8 +54,9 @@ Implementation assigns logic elements to specific locations on the FPGA board. C
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/circuitclockcycle.PNG">
 
 ### **Demonstration**
-Perhaps add a picture of your demo. Guideline: 1/2 sentences.
-
+After successfully running the code, the output looks as follows:
+<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/colourclock.GIF"> <br>
+As you can see, the project was a success as it cycled between each colour and reset as intended.
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
 ### **Code Adaptation**
