@@ -15,7 +15,7 @@ The project started by setting up a Vivado project and configuring the Basys3 de
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/VGAPrjSum1.png">
 
 ### **Template Code**
-Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+The template code was a simple program which used a state machine to cycle through 8 different solid colours, one after another, on the VGA display. The colours were black, red, yellow, green, cyan, blue, magenta, and white. These all had their own states that get the colour to show up using different 12 bits for colour assignment (colour <=12'b000000001111;).
 ### **Simulation**
 Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/simulation.png">
