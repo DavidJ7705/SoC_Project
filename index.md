@@ -99,6 +99,17 @@ end`. This starts the image at the furthest left position. When the reset signal
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcode2.png"> <br>
 
 ---
+
+* `else begin
+    red_reg = 4'b1111; 
+    green_reg = 4'b1111; 
+    blue_reg = 4'b1111; 
+end`. If the current pixel is not in the range, it sets the background colour to white. This is part of the if-else block for incrementing by 50 pixels.
+* `assign red = red_reg;
+assign green = green_reg;
+assign blue = blue_reg;`. The assign statements map the internal registers (red_reg, green_reg, blue_reg) to the external signals (red, green, blue). Using assign ensures the output signal will always reflect the values located in the registers. 
+
+
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcode3.png"> <br>
 
 
