@@ -36,7 +36,7 @@ After successfully running the code, the output looks as follows:
 
 
 ### **Simulation**
-Vivado also supports and provides simulation designs in software. Simulation is usually done before pushing the code onto the hardware and before generating bitstreams. This however, is a time consuming task and I often found myself waiting a lot as it is a slow process. One issue I ran into was that I never set my TestBench as the top of the heirarchy in my simulation sources. Once I set it as the top I was able to run my simulation. The simulation image below is of the colour cycle program. 
+Vivado also supports and provides simulation designs in software. Simulation is usually done before pushing the code onto the hardware and before generating bitstreams. This however, is a time consuming task and I often found myself waiting a lot as it is a slow process. One issue I ran into was that I never set my TestBench as the top of the hierarchy in my simulation sources. Once I set it as the top I was able to run my simulation. The simulation image below is of the colour cycle program. 
 
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/simulation.png">
 
@@ -44,7 +44,14 @@ The simulation  shows the clock at the top, with the reset right below it. The r
 
 
 ### **Synthesis**
-Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
+
+After running the simulation successfully, the next step is running synthesis and implementation. Synthesis is a straightforward process which maps the code design to a library of digital gates available in the FPGA. These gates match the functionality of the design.
+
+Implementation assigns logic elements to specific locations on the FPGA board. Connecting these logic elements will allow the board to meet the correct timing and area constraints. The result of the implementation is a bitsream file, which is then used to program the FPGA hardware.
+
+
+
+
 ### **Demonstration**
 Perhaps add a picture of your demo. Guideline: 1/2 sentences.
 
