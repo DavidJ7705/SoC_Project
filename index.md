@@ -36,8 +36,12 @@ After successfully running the code, the output looks as follows:
 
 
 ### **Simulation**
-Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
+Vivado also supports and provides simulation designs in software. Simulation is usually done before pushing the code onto the hardware and before generating bitstreams. This however, is a time consuming task and I often found myself waiting a lot as it is a slow process. One issue I ran into was that I never set my TestBench as the top of the heirarchy in my simulation sources. Once I set it as the top I was able to run my simulation. The simulation image below is of the colour cycle program. 
+
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/simulation.png">
+
+The simulation  shows the clock at the top, with the reset right below it. The reset is low at first as its active high. This is simulating how the colour cycle works. The simulation output matches the expected timing sequences of the outputed VGA image.
+
 
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
