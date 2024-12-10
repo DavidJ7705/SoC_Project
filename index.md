@@ -71,6 +71,22 @@ I decided upon a simpler design which would incolve moving elements, while also 
 
 ### **Code Adaptation**
 With the help of OpenAI, I changed the original code in the ColourCycle.v file to create and design my own image. This was a challenge at first as I had to learn what each aspect of the code did so I could get an understanding of what was going on.
+* `red_reg`, `green_reg`, and `blue_reg` are all 4 bit registers that represent the colour values in my image.
+* `block_positio`n is an 11 bit register that stores the current position of the block, and then this value determines where a block goes on the screen. It is an 11 bit value as it leaves headroom and gives extra space for the 640x480 display size.
+
+* `always @(posedge clk or posedge rst) begin` means that this block of code will be triggered when the clock signal is positive, or when the reset signal is positive.
+
+* `if (rst) begin
+    block_position <= 11'd0;
+end`. This starts the image at the furthest left position. When the reset signal is high, it then resets the block position to the start (Leftmost postion).
+* `else begin
+    block_position <= block_position + 1;`. When the reset is not activates, the block will move to the right one position at a time, on each clock.
+* `if (block_position >= 11'd640)
+    block_position <= 11'd0;`. If the blocks position reaches or exceeds the decimal value of 640, it wraps around to the start at the left.
+<br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcode1.png"> <br>
+<br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcode2.png"> <br>
+<br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcode3.png"> <br>
+
 
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
