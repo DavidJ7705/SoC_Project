@@ -62,7 +62,7 @@ As you can see, the project was a success as it cycled between each colour and r
 
 ## **My VGA Design Edit**
 My initial idea was a to have an image that would have random colours appear on the screen and flow in a satisfying way. It would look similar to the image below.
-<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/initidea.gif"> <br>
+<br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/initidea.gif"> <br>
 However, this idea was abandoned as I could not correctly get the right timing, while also making the squares to appear at the right place and right time, and to change in size an colour correctly. If i had more time I would have tried different things to achieve this.
 
 <br>
@@ -70,7 +70,8 @@ I decided upon a simpler design which would incolve moving elements, while also 
 
 
 ### **Code Adaptation**
-Briefly show how you changed the template code to display a different image. Demonstrate your understanding. Guideline: 1-2 short paragraphs.
+With the help of OpenAI, I changed the original code in the ColourCycle.v file to create and design my own image. This was a challenge at first as I had to learn what each aspect of the code did so I could get an understanding of what was going on.
+
 ### **Simulation**
 Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
 ### **Synthesis**
