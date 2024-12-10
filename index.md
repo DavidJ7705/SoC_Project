@@ -47,10 +47,12 @@ The simulation  shows the clock at the top, with the reset right below it. The r
 
 After running the simulation successfully, the next step is running synthesis and implementation. Synthesis is a straightforward process which maps the code design to a library of digital gates available in the FPGA. These gates match the functionality of the design.
 
+
+
 Implementation assigns logic elements to specific locations on the FPGA board. Connecting these logic elements will allow the board to meet the correct timing and area constraints. The result of the implementation is a bitsream file, which is then used to program the FPGA hardware.
 
 
-
+<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/circuitclockcycle.PNG">
 
 ### **Demonstration**
 Perhaps add a picture of your demo. Guideline: 1/2 sentences.
