@@ -16,7 +16,7 @@ The project started by setting up a Vivado project and configuring the Basys3 de
 
 ### **Template Code**
 The template Verilog design code for a Colour Cycle was used first to get an understanding of the VGA designs. The the clock timing was obtained from the IP catalog under the clocking section.<br> 
-<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Clocking.png"><br>
+<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/clocking .png"><br>
 The example code included VGATop.v, VGASync.v and lastly VGAColourCycle.v, which are all design sources. Testbench.v was provided which was used for the simulation sources. The Basys3_Master.xdc was also provided as it is needed to run code on the Basys3 development board. After adding all the files in the correct places, the project flow should look as follows:
 
 
@@ -27,6 +27,7 @@ The code was a simple program which used a state machine to cycle through 8 diff
 <br>
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Colourcyclecode.jpg"> <br>
 
+After successfully running the code, the output looks as follows:
 
 
 
