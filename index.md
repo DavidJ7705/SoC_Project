@@ -61,8 +61,12 @@ As you can see, the project was a success as it cycled between each colour and r
 
 
 ## **My VGA Design Edit**
-Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
-My initial idea was a static image that would have random colours appear on the screen and flow in a satisfying way.
+My initial idea was a to have an image that would have random colours appear on the screen and flow in a satisfying way. It would look similar to the image below.
+<img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/initidea.gif"> <br>
+However, this idea was abandoned as I could not correctly get the right timing, while also making the squares to appear at the right place and right time, and to change in size an colour correctly. If i had more time I would have tried different things to achieve this.
+
+<br>
+I decided upon a simpler design which would incolve moving elements, while also adding in intricate shapes and designs. I created an image that had multiple diagonal lines moving across the screen in the colours red, green, and blue.
 
 
 ### **Code Adaptation**
