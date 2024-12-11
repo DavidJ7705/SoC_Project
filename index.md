@@ -72,7 +72,7 @@ I decided upon a simpler design which would incolve moving elements, while also 
 ### **Code Adaptation**
 With the help of OpenAI, I changed the original code in the ColourCycle.v file to create and design my own image. This was a challenge at first as I had to learn what each aspect of the code did so I could get an understanding of what was going on.
 * `red_reg`, `green_reg`, and `blue_reg` are all 4 bit registers that represent the colour values in my image.
-* `block_positio`n is an 11 bit register that stores the current position of the block, and then this value determines where a block goes on the screen. It is an 11 bit value as it leaves headroom and gives extra space for the 640x480 display size.
+* `block_position` is an 11 bit register that stores the current position of the block, and then this value determines where a block goes on the screen. It is an 11 bit value as it leaves headroom and gives extra space for the 640x480 display size.
 
 * `always @(posedge clk or posedge rst) begin` means that this block of code will be triggered when the clock signal is positive, or when the reset signal is positive.
 
@@ -137,7 +137,7 @@ Synthesis followed the same procedure as before. For my modified design it invol
 
 
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcircuit1.png"> <br>
-Upon further inspecting the logic block for the updated code, you can see a new circuit with multiple logic blocks in the programe. `Block_position`, and `counter` are driving data and controlling the signals in the system. The signals are being transformed using various components like adders (rtl_add), multiplexers (rtl_mux) and also comparators (rtl_ge, rtl_lt). In the bottom half there is a counter system (counter_reg [15:0]) which is used being used as a timer and generating outputs based on the current value.
+Upon further inspecting the logic block for the updated code, you can see a new circuit with multiple logic blocks in the programe. `Block_position`, and `counter` are driving data and controlling the signals in the system. The signals are being transformed using various components like adders `(rtl_add)`, multiplexers `(rtl_mux)` and also comparators `(rtl_ge, rtl_lt)`. In the bottom half there is a counter system `(counter_reg [15:0])`, which is used being used as a timer and generating outputs based on the current value.
 
 
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/colourstripescircuit.png"> <br>
