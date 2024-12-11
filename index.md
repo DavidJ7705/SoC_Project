@@ -123,7 +123,7 @@ After slowing down the image it is interesting to see that there is in or around
 
 
 ### **Simulation**
-Show how you simulated your own design. Are there any things to note? Demonstrate your understanding. Add a screenshot. Guideline: 1-2 short paragraphs.
+The simulation shows the clock at the top. Reset is low after as it is an active high.
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastsim.png"> <br>
 
 
