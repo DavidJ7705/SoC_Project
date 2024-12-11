@@ -137,7 +137,7 @@ Synthesis followed the same procedure as before. For my modified design it invol
 
 
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcircuit1.png"> <br>
-Upon further inspecting the logic block for the updated code,
+Upon further inspecting the logic block for the updated code, you can see a new circuit with multiple logic blocks in the programe. `Block_position`, and `counter` are driving data and controlling the signals in the system. The signals are being transformed using various components like adders (rtl_add), multiplexers (rtl_mux) and also comparators (rtl_ge, rtl_lt). In the bottom half there is a counter system (counter_reg [15:0]) which is used being used as a timer and generating outputs based on the current value.
 
 
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/colourstripescircuit.png"> <br>
