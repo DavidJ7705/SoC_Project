@@ -123,9 +123,9 @@ After slowing down the image it is interesting to see that there is in or around
 
 
 ### **Simulation**
-The simulation shows the clock at the top. Reset is low after as it is an active high meaning only when a condition is reached it will reset the image. The hsync signal toggles periodically and has a shorter period compared to vsync. Vsync toggles much less frequently than hsync, indicating it synchronizes the start of a new frame. When vsync goes low, the system begins rendering from the top-left corner of the display again (row resets to zero). Vid_on indicates whether  data is being actively output. When vid_on is high, the color channels (red, green, blue) should display valid pixel values.
-<br><br> row increments slowly and represents the vertical position in the display grid. Each increment of row corresponds to a new horizontal line of pixels.
-col increments rapidly within each row, representing the horizontal position of pixels being rendered in that line.
+The simulation shows the `clock` at the top. `Reset` is low after as it is an active high meaning only when a condition is reached it will reset the image. The `hsync` signal toggles periodically and has a shorter period compared to vsync. `Vsync` toggles much less frequently than `hsync`, indicating it synchronizes the start of a new frame. When vsync goes low, the system begins rendering from the top-left corner of the display again (row resets to zero). `Vid_on` indicates whether  data is being actively output. When vid_on is high, the color channels (red, green, blue) should display valid pixel values.
+<br><br> `row` increments slowly and represents the vertical position in the display grid. Each increment of row corresponds to a new horizontal line of pixels.
+`col` increments rapidly within each row, representing the horizontal position of pixels being rendered in that line.
 When col reaches its maximum value, it resets to zero, and row increments (this happens at each hsync pulse).
 Each high-to-low transition signals the start of a new row, and this aligns with the col signal resetting to zero.
 
