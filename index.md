@@ -149,12 +149,5 @@ The custom design was created successfully, and displayed on the Basys3 Board. I
 
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Fastgif.gif">
 
- 
- 
-(insert images of it) 
-explaining whats going on
-It is a solid colour background, which cycles through different colours separated by stripes and columns, in a clockwise motion around the display.
-
 ### **Conclusion**
-If you get your own design working on the Basys3 board, take a picture! Guideline: 1-2 sentences.
-
+I got my design to work in the end. It was a rewarding experience and I learned a lot from it. Debugging and problem solving different issues further developed my understandingg of Verilog and hardware design principles and I look forward to implementing them in future and exploring them more in detail.
