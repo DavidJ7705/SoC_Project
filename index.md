@@ -1,7 +1,7 @@
 ---
 layout: home
 title: FPGA VGA Driver Project
-tags: fpga vga verilog
+tags: David Jayakumar
 categories: demo
 ---
 
