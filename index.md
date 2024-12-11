@@ -133,17 +133,19 @@ Each high-to-low transition signals the start of a new row, and this aligns with
 
 
 ### **Synthesis**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
-
+Synthesis followed the same procedure as before. For my modified design it involved generating a new bitstream, and uploading that to my board. Each logical block below is one of the source files such as the clock, vga sync, and my colour stripes file. The multiplexers at the end are the colours that will be written and outputted on the screen. There are 3 inputs which represent the sync, clock and my updated code. The schematic is very similar to the original code except for the fact that there are multiplexers for the 3 colours and not buffers for every single one.
 
 
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/fastcircuit1.png"> <br>
+Upon further inspecting the logic block for the updated code,
+
+
 <br><img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/colourstripescircuit.png"> <br>
 
 
 
 ### **Demonstration**
-The custom design was created successfully, and displayed on the Basys3 Board. It showcased my unique pattern which was a combination of colour cycles composed of stripes and columns, overlayed on a static image.
+The custom design was created successfully, and displayed on the Basys3 Board. It showcased my unique pattern which was a combination of colour cycles composed of stripes and columns.
 
 <img src="https://raw.githubusercontent.com/DavidJ7705/SoC_Project/main/docs/assets/images/Fastgif.gif">
 
